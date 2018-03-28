@@ -34,9 +34,10 @@ def getDataInfo(datapath):
             dataInfo_dict['classes'] = classes
             dataInfo_dict['name'] = name
             data_list.append(dataInfo_dict)
+    return data_list
 
 
-getDataInfo(AUDIO_PATH)
+print(getDataInfo(AUDIO_PATH))
 
 # for (root, dirs, files) in os.walk(AUDIO_PATH):
 #      for filename in files:
