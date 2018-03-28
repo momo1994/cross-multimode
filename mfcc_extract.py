@@ -28,9 +28,12 @@ def getDataInfo(datapath):
     for (root, dirs, files) in os.walk(AUDIO_PATH):
         for filename in files:
             path = os.path.join(root,filename)
-            classes = path[]
+            classes = path[findSubStr("\\", path, 7)+1:findSubStr("\\", path, 8)]
+            name = path[findSubStr("\\", path, 8)+1:findSubStr(".", path, 1)]
             dataInfo_dict['path'] = path
-            #data_list.append(dataInfo_dict)
+            dataInfo_dict['classes'] = classes
+            dataInfo_dict['name'] = name
+            data_list.append(dataInfo_dict)
 
 
 getDataInfo(AUDIO_PATH)
