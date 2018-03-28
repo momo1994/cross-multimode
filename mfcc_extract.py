@@ -3,6 +3,10 @@ import librosa.display
 
 import os
 
+#批量提取音频数据mfcc特征
+#2018-03-28
+#shao
+
 AUDIO_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\data\\audio"
 
 SAVE_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\mmfc"
@@ -24,7 +28,7 @@ def findSubStr(substr, str, i):
 
 def getDataInfo(datapath):
     data_list=[]
-    dataInfo_dict={}
+    dataInfo_dict = {}
     for (root, dirs, files) in os.walk(AUDIO_PATH):
         for filename in files:
             path = os.path.join(root,filename)
@@ -33,25 +37,30 @@ def getDataInfo(datapath):
             dataInfo_dict['path'] = path
             dataInfo_dict['classes'] = classes
             dataInfo_dict['name'] = name
-            data_list.append(dataInfo_dict)
+            dataInfo_dict_copy = dataInfo_dict.copy()
+            data_list.append(dataInfo_dict_copy)
     return data_list
 
 
-print(getDataInfo(AUDIO_PATH))
 
-# for (root, dirs, files) in os.walk(AUDIO_PATH):
-#      for filename in files:
-#          # 提取mfcc特征
-#          read_path = os.path.join(root,filename)
-#          y, sr = librosa.load(read_path, sr=None, duration=5.0)
-#          mmfc_feature = librosa.feature.mfcc(y=y, sr=sr)
-#          start_index = findSubStr("\\", read_path, 7)
-#          end_index = findSubStr(".", read_path,1)
-#          save_path = os.path.join(SAVE_PATH,read_path[start_index+1:end_index])+'.txt'
-#          print(save_path)
-#          mmfc_string = ','.join(str(x) for x in mmfc_feature)
-#          with open(save_path, 'w') as mmfc_file:
-#              mmfc_file.write(mmfc_string)
+if __name__=="__main__":
+    audio_data = getDataInfo(AUDIO_PATH)
+    for data_dict in audio_data:
+        read_path = data_dict['path']
+        y, sr = librosa.load(read_path, sr=None, duration=5.0)
+        mmfc_feature = librosa.feature.mfcc(y=y, sr=sr)
+
+        # 保存路径
+        save_dir = os.path.join(SAVE_PATH,data_dict['classes'])
+        save_path = os.path.join(SAVE_PATH,data_dict['classes'],data_dict['name'])+'.txt'
+        #判断路径是否存在，不存在则创建该路径
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
+        mmfc_string = ','.join(str(x) for x in mmfc_feature)
+        with open(save_path, 'w') as mmfc_file:
+            mmfc_file.write(mmfc_string)
+
+
 
 
 
