@@ -1,15 +1,53 @@
 import librosa
 import librosa.display
 
-AUDIO_PATH = ""
-#获取声音地址
-def get_path():
+import os
+
+AUDIO_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\data\\audio"
+
+SAVE_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\mmfc"
 
 
-#提取mfcc特征
-y,sr = librosa.load("D:/0001_1.wma",sr=None,duration=5.0)
-mmfc_feature = librosa.feature.mfcc(y=y,sr=sr)
-print(mmfc_feature.shape)
-mmfc_string = ','.join(str(x) for x in mmfc_feature)
-with open('D:/文档/跨模态检索实验/python/cross-multimode/mmfc/0001_1.txt','w') as mmfc_file:
-    mmfc_file.write(mmfc_string)
+#返回substr在str中第i次出现的位置
+def findSubStr(substr, str, i):
+    count = 0
+    while i > 0:
+        index = str.find(substr)
+        if index == -1:
+            return -1
+        else:
+            str = str[index+1:]
+            i -= 1
+            count = count + index + 1
+    return count - 1
+
+
+def getDataInfo(datapath):
+    data_list=[]
+    dataInfo_dict={}
+    for (root, dirs, files) in os.walk(AUDIO_PATH):
+        for filename in files:
+            path = os.path.join(root,filename)
+            classes = path[]
+            dataInfo_dict['path'] = path
+            #data_list.append(dataInfo_dict)
+
+
+getDataInfo(AUDIO_PATH)
+
+# for (root, dirs, files) in os.walk(AUDIO_PATH):
+#      for filename in files:
+#          # 提取mfcc特征
+#          read_path = os.path.join(root,filename)
+#          y, sr = librosa.load(read_path, sr=None, duration=5.0)
+#          mmfc_feature = librosa.feature.mfcc(y=y, sr=sr)
+#          start_index = findSubStr("\\", read_path, 7)
+#          end_index = findSubStr(".", read_path,1)
+#          save_path = os.path.join(SAVE_PATH,read_path[start_index+1:end_index])+'.txt'
+#          print(save_path)
+#          mmfc_string = ','.join(str(x) for x in mmfc_feature)
+#          with open(save_path, 'w') as mmfc_file:
+#              mmfc_file.write(mmfc_string)
+
+
+
