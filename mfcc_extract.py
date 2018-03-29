@@ -7,9 +7,10 @@ import os
 #2018-03-28
 #shao
 
-AUDIO_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\data\\audio"
+#根据需要修改路径
+AUDIO_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\data\\audio"
 
-SAVE_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\mmfc"
+SAVE_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\mfcc"
 
 
 #返回substr在str中第i次出现的位置
@@ -32,8 +33,8 @@ def getDataInfo(datapath):
     for (root, dirs, files) in os.walk(AUDIO_PATH):
         for filename in files:
             path = os.path.join(root,filename)
-            classes = path[findSubStr("\\", path, 7)+1:findSubStr("\\", path, 8)]
-            name = path[findSubStr("\\", path, 8)+1:findSubStr(".", path, 1)]
+            classes = path[findSubStr("\\", path, path.count("\\")-1)+1:findSubStr("\\", path, path.count("\\"))]
+            name = path[findSubStr("\\", path, path.count("\\"))+1:findSubStr(".", path, 1)]
             dataInfo_dict['path'] = path
             dataInfo_dict['classes'] = classes
             dataInfo_dict['name'] = name
@@ -49,7 +50,8 @@ if __name__=="__main__":
         read_path = data_dict['path']
         y, sr = librosa.load(read_path, sr=None, duration=5.0)
         mmfc_feature = librosa.feature.mfcc(y=y, sr=sr)
-
+        print(mmfc_feature)
+        break
         # 保存路径
         save_dir = os.path.join(SAVE_PATH,data_dict['classes'])
         save_path = os.path.join(SAVE_PATH,data_dict['classes'],data_dict['name'])+'.txt'
