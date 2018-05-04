@@ -26,7 +26,8 @@ def findSubStr(substr, str, i):
             count = count + index + 1
     return count - 1
 
-
+#input:datapath
+#output:data_list
 def getDataInfo(datapath):
     data_list=[]
     dataInfo_dict = {}
