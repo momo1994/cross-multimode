@@ -24,18 +24,18 @@ BOTTLENECK_TENSOR_NAME = 'pool_3/_reshape:0'
 JPEG_DATA_TENSOR_NAME = 'DecodeJpeg/contents:0'
 
 #下载的谷歌训练好的Inception-v3模型文件目录
-MODEL_DIR = 'D:/workspace/python/cross-multimode/inception-v3_model'
+MODEL_DIR = 'D:/Workspaces/GitHub/cross-multimode/inception-v3_model'
 
 #下载的谷歌训练好的Inception-v3模型文件名
 MODEL_FILE = 'tensorflow_inception_graph.pb'
 
 #因为一个训练数据会被使用多次，所以可以将原始图像通过Inception-v3
 #模型计算得到的特征向量保存在文件中！！！免去重复的计算。下面的变量定义了这些文件的存放地址
-CACHE_DIR = 'D:/workspace/python/cross-multimode/bottleneck'
+CACHE_DIR = 'D:/Workspaces/GitHub/cross-multimode/bottleneck'
 
 #图片数据文件夹。在这个文件夹中每一个子文件夹代表一个需要区分的类别，
 #每个子文件夹中存放了对应类别的图片
-INPUT_DATA = 'D:/workspace/python/cross-multimode/data/images'
+INPUT_DATA = 'D:/Workspaces/GitHub/cross-multimode/data/images'
 
 #验证的数据百分比
 VALIDATION_PERCENTAGE = 1
