@@ -51,7 +51,7 @@ def train(logits,labels):
     #show training process
 
 if __name__ == "__main__":
-    train_filename = "/home/wc/DataSet/traffic/testTFRecord/train.tfrecords" #TFRecord路径
+    train_filename = "/data/TFRecord/train.tfrecords" #TFRecord路径
     data_batch,label_batch = TFRecord.createBath(filename = train_filename,batchsize=3)
     pred = Multimode_Network.build(data_batch)
     optimizer,loss,accuracy = train(logits=pred,labels=label_batch)

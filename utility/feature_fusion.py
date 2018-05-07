@@ -2,6 +2,7 @@ import os
 import numpy
 import mfcc_extract
 import model.Multimode_Network
+import tensorflow as tf
 #根据需要修改路径
 #AUDIO_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\mfcc"   #pc路径
 #IMG_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\bottleneck"
@@ -82,13 +83,4 @@ def direct_fusion(feature_a,feature_b):
 
 
 if __name__ == "__main__":
-    audio_data = getDataInfo(AUDIO_PATH)
-    img_data = getDataInfo(IMG_PATH)
-    audio_feature = readText(audio_data,type = 'audio')
-    img_feature = readText(img_data, type='image')
-    fusion = direct_fusion(audio_feature,img_feature)
-    for i in fusion:
-        result = i['fusion_feature'].get_shape()
-        print("fusion size:" )
-
-
+    prob = tf.nn.softmax(0.1)

@@ -29,7 +29,7 @@ class Multimode_Network:
         self.fc5 = self.fc_layer(self.fc_drop4,10,"fc5")
         self.fc_drop6 = tf.nn.dropout(self.fc5,0.5,"fc_drop6")
 
-        self.prob = tf.nn.softmax(self.relu4, name="prob")
+        self.prob = tf.nn.softmax(self.fc_drop6, name="prob")
         return self.prob
 
 
