@@ -1,10 +1,13 @@
 import os
 import numpy
 import mfcc_extract
+import model.Multimode_Network
 #根据需要修改路径
-AUDIO_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\mfcc"
+#AUDIO_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\mfcc"   #pc路径
+#IMG_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\bottleneck"
 
-IMG_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\bottleneck"
+AUDIO_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\mfcc"  #实验室路径
+IMG_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\bottleneck"
 #返回substr在str中第i次出现的位置
 def findSubStr(substr, str, i):
     count = 0
@@ -55,6 +58,7 @@ def readText(feature_dict_list,type):
         feature_dict['name'] = data_dict['name']
         feature_dict_copy = feature_dict.copy()
         feature_list.append(feature_dict_copy)
+    print("Read " +type +" data finish!")
     return feature_list
 
 #直接拼接融合方法 -- 直接在构建的网络中调用
@@ -71,7 +75,7 @@ def direct_fusion(feature_a,feature_b):
         fusion_feature_dict['classes'] = audio['classes']
         fusion_feature_dict_copy = fusion_feature_dict.copy()
         fusion_feature_list.append(fusion_feature_dict_copy)
-
+    print("Fusion feature finish!")
     return fusion_feature_list
 
 
@@ -83,5 +87,8 @@ if __name__ == "__main__":
     audio_feature = readText(audio_data,type = 'audio')
     img_feature = readText(img_data, type='image')
     fusion = direct_fusion(audio_feature,img_feature)
+    for i in fusion:
+        result = i['fusion_feature'].get_shape()
+        print("fusion size:" )
 
 

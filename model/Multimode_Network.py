@@ -18,11 +18,19 @@ class Multimode_Network:
 
         self.conv2_1 = self.conv_layer(self.pool1, 12, 24, "conv2_1")
         self.conv2_2 = self.conv_layer(self.conv2_1, 12, 24, "conv2_2")
-        self.pool2 = self.max_pool(self.conv2_2, 'pool2')#1821.5
+        self.pool2 = self.avg_pool(self.conv2_2, 'pool2')#1821.5
 
-        self.fc3 = self.fc_layer(self.pool2,1822,500,"fc3")
-        self.relu4 = tf.nn.relu(self.fc4,"relu4")
+        #flatten
+
+        #fully connected
+        self.fc3 = self.fc_layer(self.pool2,500,"fc3")
+        self.fc_drop4 = tf.nn.dropout(self.fc4,0.5,"fc_drop4")
+
+        self.fc5 = self.fc_layer(self.fc_drop4,10,"fc5")
+        self.fc_drop6 = tf.nn.dropout(self.fc5,0.5,"fc_drop6")
+
         self.prob = tf.nn.softmax(self.relu4, name="prob")
+        return self.prob
 
 
 
@@ -46,14 +54,10 @@ class Multimode_Network:
         return tf.nn.pool(bottom,window_shape=[2],pooling_type='AVG',padding='SAME',name=name)
 
     #定义全连接层
-    def fc_layer(self, bottom,in_size, out_size, name):
+    def fc_layer(self, bottom, out_size, name):
         with tf.variable_scope(name):
-            #flatten
-            shape = bottom.get_shape().as_list()
-            dim = 1
-            for d in shape[1:]:
-                dim *= d
-            x = tf.reshape(bottom, [-1, dim])
+            in_size = bottom.get_shape()[-1].value #扁平化后的值
+            x = bottom
 
             weights = self.get_variable('weight',[in_size,out_size],initializer=tf.truncated_normal_initializer(stddev=0.1))
             biases = self.get_variable('biases_fc', [out_size] ,initializer=tf.zeros_initializer())

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cross-multimode.iml" filepath="$PROJECT_DIR$/.idea/cross-multimode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../tensorflow-vgg-master/.idea/tensorflow-vgg-master.iml" filepath="$PROJECT_DIR$/../tensorflow-vgg-master/.idea/tensorflow-vgg-master.iml" />
     </modules>
   </component>
 </project>
