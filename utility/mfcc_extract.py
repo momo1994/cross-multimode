@@ -8,9 +8,12 @@ import os
 #shao
 
 #根据需要修改路径
-AUDIO_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\data\\audio"
+#AUDIO_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\data\\audio"  #PC路径
+#SAVE_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\mfcc"
 
-SAVE_PATH = "D:\\Workspaces\\GitHub\\cross-multimode\\mfcc"
+#实验室路径
+AUDIO_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\data\\train\\audio"
+SAVE_PATH = "D:\\文档\\跨模态检索实验\\python\\cross-multimode\\mfcc"
 
 
 #返回substr在str中第i次出现的位置
@@ -51,9 +54,8 @@ if __name__=="__main__":
         read_path = data_dict['path']
         y, sr = librosa.load(read_path, sr=None, duration=5.0)
         mmfc_feature = librosa.feature.mfcc(y=y, sr=sr)
-        print(mmfc_feature)
-        break
         # 保存路径
+        #print(mmfc_feature.shape)
         save_dir = os.path.join(SAVE_PATH,data_dict['classes'])
         save_path = os.path.join(SAVE_PATH,data_dict['classes'],data_dict['name'])+'.txt'
         #判断路径是否存在，不存在则创建该路径

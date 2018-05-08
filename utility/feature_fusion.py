@@ -71,6 +71,7 @@ def direct_fusion(feature_a,feature_b):
     for (audio,image) in zip(feature_a,feature_b):
         a = numpy.array(audio['feature']).reshape(-1) #audio的特征需要reshape成一维数组
         i = numpy.array(image['feature'])
+        #print(a.shape)
         connection_feature = numpy.concatenate([a,i],axis=0)
         fusion_feature_dict['fusion_feature'] = connection_feature
         fusion_feature_dict['classes'] = audio['classes']
@@ -82,18 +83,10 @@ def direct_fusion(feature_a,feature_b):
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    prob = tf.nn.softmax(0.1)
-=======
     audio_data = getDataInfo(AUDIO_PATH)
-
     img_data = getDataInfo(IMG_PATH)
     audio_feature = readText(audio_data,type = 'audio')
     img_feature = readText(img_data, type='image')
     fusion = direct_fusion(audio_feature,img_feature)
-    for i in fusion:
-        result = i['fusion_feature'].get_shape()
-        print("fusion size:" )
 
 
->>>>>>> 395eddff41b00e39a7aa3aea9b30136faf0a154a
