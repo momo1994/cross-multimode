@@ -2,71 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="642a1437-e1bf-4e14-85c3-703a6de63e10" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/Multimode_Network.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/train_MN.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/David/David_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/David/David_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/David/David_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Harry/Harry_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Harry/Harry_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Harry/Harry_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Jack/Jack_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Jack/Jack_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Jack/Jack_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Janey/Janey_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Janey/Janey_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Janey/Janey_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Jerrey/Jerrey_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Jerrey/Jerrey_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Jerrey/Jerrey_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Lory/Lory_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Lory/Lory_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Lory/Lory_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Lucy/Lucy_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Lucy/Lucy_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Lucy/Lucy_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Rose/Rose_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Rose/Rose_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Rose/Rose_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Shane/Shane_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Shane/Shane_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Shane/Shane_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Wisking/Wisking_1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Wisking/Wisking_2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/audio/Wisking/Wisking_3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/fft/0001_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/David/David_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/David/David_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/David/David_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Harry/Harry_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Harry/Harry_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Harry/Harry_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Jack/Jack_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Jack/Jack_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Jack/Jack_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Janey/Janey_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Janey/Janey_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Janey/Janey_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Jerrey/Jerrey_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Jerrey/Jerrey_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Jerrey/Jerrey_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Lory/Lory_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Lory/Lory_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Lory/Lory_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Lucy/Lucy_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Lucy/Lucy_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Lucy/Lucy_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Rose/Rose_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Rose/Rose_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Rose/Rose_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Shane/Shane_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Shane/Shane_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Shane/Shane_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Wisking/Wisking_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Wisking/Wisking_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/images/Wisking/Wisking_3.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Trans_learning.py" afterPath="$PROJECT_DIR$/Trans_learning.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature_fusion.py" afterPath="$PROJECT_DIR$/feature_fusion.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,15 +14,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/cross_multimode$mfcc_extract.coverage" NAME="mfcc_extract Coverage Results" MODIFIED="1522320037238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cross_multimode$feature_fusion.coverage" NAME="feature_fusion Coverage Results" MODIFIED="1524105604542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cross_multimode$feature_fusion.coverage" NAME="feature_fusion Coverage Results" MODIFIED="1525752555987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cross_multimode$Trans_learning.coverage" NAME="Trans_learning Coverage Results" MODIFIED="1522322286620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mfcc_extract.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mfcc_extract.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mfcc_extract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
+            <state relative-caret-position="21">
               <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -95,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_MN.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/train_MN.py">
+      <file leaf-file-name="feature_fusion.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature_fusion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="29" />
+            <state relative-caret-position="273">
+              <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -108,7 +44,7 @@
       <file leaf-file-name="Multimode_Network.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Multimode_Network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="840">
               <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -120,7 +56,7 @@
       <file leaf-file-name="vgg16.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/vgg16.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
+            <state relative-caret-position="1533">
               <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="56" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -132,7 +68,7 @@
       <file leaf-file-name="test_vgg16.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/test_vgg16.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="105">
               <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -144,7 +80,7 @@
       <file leaf-file-name="vgg19_trainable.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/vgg19_trainable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="1428">
               <caret line="73" column="8" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="41" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -156,7 +92,7 @@
       <file leaf-file-name="test_vgg19_trainable.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/test_vgg19_trainable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
+            <state relative-caret-position="840">
               <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
               <folding>
                 <element signature="e#47#70#0" expanded="true" />
@@ -199,12 +135,12 @@
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/audioread/ffdec.py" />
         <option value="$PROJECT_DIR$/Trans_learning.py" />
         <option value="$PROJECT_DIR$/mfcc_extract.py" />
-        <option value="$PROJECT_DIR$/feature_fusion.py" />
         <option value="$PROJECT_DIR$/../tensorflow-vgg-master/vgg16.py" />
         <option value="$PROJECT_DIR$/../tensorflow-vgg-master/test_vgg19_trainable.py" />
         <option value="$PROJECT_DIR$/model/VGG16.py" />
         <option value="$PROJECT_DIR$/model/Multimode_Network.py" />
         <option value="$PROJECT_DIR$/train_MN.py" />
+        <option value="$PROJECT_DIR$/feature_fusion.py" />
       </list>
     </option>
   </component>
@@ -234,6 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,20 +179,10 @@
               <item name="cross-multimode" type="b2602c69:ProjectViewProjectNode" />
               <item name="cross-multimode" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cross-multimode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cross-multimode" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cross-multimode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tensorflow-vgg-master" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,13 +291,13 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16645244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16838047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21259843" sideWeight="0.50375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21259843" sideWeight="0.49625" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12860893" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32587412" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -445,6 +372,74 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mfcc_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Multimode_Network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/vgg16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/test_vgg16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/vgg19_trainable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="73" column="8" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/test_vgg19_trainable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <element signature="e#47#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_MN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mfcc_extract.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -688,23 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mfcc_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_fusion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -721,7 +699,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/vgg16.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
+        <state relative-caret-position="1533">
           <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="56" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -731,7 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/test_vgg16.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="105">
           <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -741,7 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/test_vgg19_trainable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
+        <state relative-caret-position="840">
           <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding>
             <element signature="e#47#70#0" expanded="true" />
@@ -751,7 +729,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../tensorflow-vgg-master/vgg19_trainable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
+        <state relative-caret-position="1428">
           <caret line="73" column="8" lean-forward="false" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="41" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -761,11 +739,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Multimode_Network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="840">
           <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_fusion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="53" selection-end-line="84" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,6 +760,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mfcc_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
