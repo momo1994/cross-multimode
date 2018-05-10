@@ -1,6 +1,6 @@
 import os
 import numpy
-import mfcc_extract
+import utility.mfcc_extract
 import model.Multimode_Network
 import tensorflow as tf
 #根据需要修改路径
@@ -69,8 +69,8 @@ def direct_fusion(feature_a,feature_b):
     fusion_feature_dict = {}
 
     for (audio,image) in zip(feature_a,feature_b):
-        a = numpy.array(audio['feature']).reshape(-1) #audio的特征需要reshape成一维数组
-        i = numpy.array(image['feature'])
+        a = numpy.array(audio['feature'],dtype=numpy.float32).reshape(-1) #audio的特征需要reshape成一维数组
+        i = numpy.array(image['feature'],dtype=numpy.float32)
         #print(a.shape)
         connection_feature = numpy.concatenate([a,i],axis=0)
         fusion_feature_dict['fusion_feature'] = connection_feature
